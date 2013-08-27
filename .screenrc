@@ -1,5 +1,4 @@
 startup_message off
 vbell off
 caption always
-deflogin on
 defscrollback 10000
