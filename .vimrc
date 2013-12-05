@@ -14,7 +14,7 @@ set ruler           " show the cursor position all the time
 execute pathogen#infect()
 
 " enabling hardmode (https://github.com/wikitopian/hardmode)
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+"autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 syntax on
