@@ -17,6 +17,18 @@ execute pathogen#infect()
 "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
+"disabling Left/Right arrow keys
+noremap  <buffer> <Left>  <NOP>
+noremap  <buffer> <Right> <NOP>
+inoremap <buffer> <Left>  <NOP>
+inoremap <buffer> <Right> <NOP>
+vnoremap <buffer> <Left>  <NOP> 
+vnoremap <buffer> <Right>  <NOP> 
+noremap  <buffer> h <NOP>
+noremap  <buffer> l <NOP>
+vnoremap <buffer> h <NOP>
+vnoremap <buffer> l <NOP>
+
 syntax on
 filetype plugin indent on
 set hlsearch
