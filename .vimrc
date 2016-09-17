@@ -30,3 +30,6 @@ if has("autocmd")
   \   exe "normal! g'\"" |
   \ endif
 endif
+
+set encoding=utf-8  " The encoding displayed.
+set fileencoding=utf-8  " The encoding written to file.
