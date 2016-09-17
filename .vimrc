@@ -20,3 +20,13 @@ nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 syntax on
 filetype plugin indent on
 set hlsearch
+
+if has("autocmd")
+  " In text files, always limit the width of text to 78 characters
+  autocmd BufRead *.txt set tw=78
+  " When editing a file, always jump to the last cursor position
+  autocmd BufReadPost *
+  \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+  \   exe "normal! g'\"" |
+  \ endif
+endif
